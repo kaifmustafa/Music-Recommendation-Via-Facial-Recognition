@@ -29,5 +29,6 @@ To run the app, type following command in terminal.
 
 ## Authors
 
-- [Md Sibtain Raza Khan](https://github.com/Sibtainkhann/Music-Recomendation-Using-Facial-Recognition)
+- [Md Kaif Mustafa](https://github.com/kaifmustafa)
+
 
