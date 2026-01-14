@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Recommendation</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+        .card {
+            background: #222;
+            padding: 15px;
+            margin: 10px auto;
+            width: 300px;
+            border-radius: 10px;
+        }
+        a {
+            color: #1db954;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎵 Music Recommendation System</h1>
+
+    <h2>Detected Emotion: {{ emotion }}</h2>
+
+    <h3>Recommended Songs</h3>
+
+    {% if songs %}
+        {% for song in songs %}
+            <div class="card">
+                <p><b>{{ song.song_name }}</b></p>
+                <p>{{ song.artist }}</p>
+                <a href="{{ song.link }}" target="_blank">Listen</a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No songs found</p>
+    {% endif %}
+
+</body>
+</html>
